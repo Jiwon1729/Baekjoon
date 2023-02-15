@@ -11,3 +11,12 @@
 2. 큐에서 원소를 꺼내 해당 원소와 연결된 간선을 모두 제거
 3. 제거한 후에 진입차수가 0인 정점을 큐에 삽입
 4. 이후 2~3의 과정을 반복
+
+### 12100
+#### Copy and Deepcopy
+
+#### List 2차원 정렬
+
+### 20040
+- iteration 횟수 증가: sys.setrecursionlimit(10**7)
+- unionfind
