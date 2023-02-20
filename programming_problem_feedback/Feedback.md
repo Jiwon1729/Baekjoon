@@ -16,7 +16,24 @@
 #### Copy and Deepcopy
 
 #### List 2차원 정렬
+- Trnspose: matrix = [list(x) for x in zip(*matrix)]
+- *는 unpacking zip은 여러 개의 리스트 각 요소를 합쳐줌
+- 상하 변경
+    for i in range(N):
+        tmp = matrix[i]
+        tmp.reverse()
+        matrix2.append(tmp)
 
 ### 20040
 - iteration 횟수 증가: sys.setrecursionlimit(10**7)
 - unionfind
+
+### 17387
+- 두 선분이 일치하는 경우에는 따로 처리해야 한다는 것을 고려하지 못함
+#### CCW 
+- https://gaussian37.github.io/math-algorithm-ccw/ 참고
+- 외적을 통해 결과가 음수면 시계뱡향, 양수면 반시계방향으로 벡터를 통해 방향을 구하는 방법
+
+### 16724
+- cycle이 먼저 있지 않은 경우에 대해서 고려하지 못함
+
