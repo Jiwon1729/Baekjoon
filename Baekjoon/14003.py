@@ -23,6 +23,7 @@ def bin_search(a):
         else:
             return mid
     return end
+
 for i in range(1,len(A)):
     j=len(B)-1
     if B[j]<A[i]:
