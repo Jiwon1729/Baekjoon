@@ -25,6 +25,7 @@ for a in airplane:
     if find(a)!=0:
         cnt+=1
         union(a,find(a)-1)
+        print(parents)
     else:
         break
 print(cnt)
