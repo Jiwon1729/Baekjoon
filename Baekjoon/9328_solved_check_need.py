@@ -39,9 +39,8 @@ for _ in range(T):
     visited_doc = []
 
     for i in sys.stdin.readline():
-        if i.isalpha():  # 만약 알파벳이면
-            key[i] = True  # 키로 저장
-    # print(visited)
+        if i.isalpha():
+            key[i] = True
     answer = 0
     bfs(visited)
     print(answer)

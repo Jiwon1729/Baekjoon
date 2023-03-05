@@ -15,3 +15,21 @@ for i in range(n):
 
 for i in range(n):
     print("".join(map(str,answer[i])))
+
+
+'''
+Recursion code
+def d(n):
+  if n>1:
+    l=d(n//3)
+    L=[]
+    for s in l:
+      L.append(s*3)
+    for s in l:
+      L.append(s+' '*(n//3)+s)
+    for s in l:
+      L.append(s*3)
+    return L
+  return ['*']
+print(*d(int(input())),sep='\n')
+'''

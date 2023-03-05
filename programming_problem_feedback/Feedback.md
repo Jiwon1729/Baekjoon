@@ -130,8 +130,12 @@ fun(0, arr)
 ### 2342: Dance Dance Revolution
 - dp[i][j][10000]: 250000개 이므로 dp로 채우기
 - 사고: dp를 쓸 수 있는 이유: 중간 상태 필요 없이 최종 발 상태와 최소 힘 상태가 중요.
+<<<<<<< HEAD
 ### 2407: 조합
 - comb(*map(int, sys.stdin.readline()))에서 *를 써야 값으로 반환되서 나옴
+=======
+
+>>>>>>> 5155f2f5e697f1b1272cf0a81530c7af940ca855
 ### 2447: 별 찍기-10
 - 재귀로 풀려고 했ㅇ나생각이 안 나서, 빈 칸을 만드는 거 이용
 
@@ -176,6 +180,7 @@ for k in range(3):
 
 ### 10775: 공항
 - 최대한 큰 번호에 비행기를 도킹시키는 방식: Unionfind 이용. doking하면 parent 1 감소되 므로, union(a,find(a)-1)을 이용함
+<<<<<<< HEAD
 ### 11444: 피보나치 수 6
 - 피보나치 (f_n+2,f_n+1)=[(1,1),(1,0)]*(f_n+1,f_n)
 ### 11725: 트리의 부모 찾기
@@ -203,6 +208,8 @@ dfs(1)
 for i in range(2, N + 1):
     print(ret[i])
 ```
+=======
+>>>>>>> 5155f2f5e697f1b1272cf0a81530c7af940ca855
 ### 11729: 하노이
 - f(n-1)과 f(n)의 차이는 f(n)을 1에서 3으로 옮기고 f(n-1)을 1에서 3이 아닌 2에서 3으로 옮긴다는 차이
 -->f(n,st,ed)=f(n-1,6-st-ed, ed)+f(1,st,ed)+f(n-1,st,6-ed-st)을 이용한 재귀 사용
@@ -231,6 +238,7 @@ for i in range(2, N + 1):
 - 가장 위에 경우의 수 2*10
 - 그 다음에 위에 있는 것을 끄는 방법은 밑에 전구밖에 없는 것을 이용
 
+<<<<<<< HEAD
 ### 15650: N과 M(2)
 - 숏코딩: https://www.acmicpc.net/source/30572635
 ```python
@@ -241,6 +249,8 @@ for elem in combinations(range(1, n+1), m):
   print(*elem)
 ```
 - 제너레이터와 yield 활용: https://juhee-maeng.tistory.com/91
+=======
+>>>>>>> 5155f2f5e697f1b1272cf0a81530c7af940ca855
 ### 16724: 피리 부는 사나이
 - 모든 시작점은 cycle로 마무리 되거나 cycle 안으로 들어간다---> 사이클 당 1개의 safe 존이 있다
 

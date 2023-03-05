@@ -63,4 +63,3 @@ for a in range(1,N*N,2):
         # print(chess)
 
 print(answer1+answer2)
-print(N)
