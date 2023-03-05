@@ -1,5 +1,3 @@
-matrix = [[1,2],[3,4],[5,6]]
-for x in zip(*matrix):
-    print(x)
-
-print(*matrix)
+import sys
+arr = [list(map(int, sys.stdin.readline())) for _ in range(3)]
+print(arr)
