@@ -1,0 +1,8 @@
+N, M =map(int,input().split())
+maze = []
+for i in range(N):
+    maze.append(input())
+dp = [[0 for i in range(M)] for _ in range(N)]
+i, j = 0,0
+while i<N and j<M:
+    dp[i][j]

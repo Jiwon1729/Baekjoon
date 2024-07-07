@@ -1,0 +1,22 @@
+N = int(input())
+tree = list(map(int,input().split()))
+remove = int(input())
+new_tree = [[] for _ in range(N)]
+queue=[]
+for i in range(N):
+    if tree[i] == remove or i == remove:
+        continue
+    elif tree[i]!=-1:
+        new_tree[tree[i]].append(i)
+    else:
+        queue.append(i)
+
+answer = 0
+while queue:
+    tmp = queue.pop()
+    if new_tree[tmp] == []:
+        answer += 1
+    else:
+        for i in new_tree[tmp]:
+            queue.append(i)
+print(answer)
